@@ -9,25 +9,64 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+/*   ----- Debugging  -----  */
+* { 
+
+  color: #1E1E1E;
+  background-color: white;
+  padding: 0;
+}
+
+html {
+  /* background-image: url("./images/21-monroe-street-new-york-ny.webp"); */
+
+  /*grid-template-rows: 1fr 5fr; */
+}
+
 /*   ----- Variables  -----  */
 :root {
-    --custom-color-name:;
-    --custom-embellishment-name:;
+    /*--custom-color-name:;
+    --custom-embellishment-name:; */
     font-family: Poppins;
+    font-size: 16px;
   }
   
+  a {
+    color: #58BDD2;
+  }
+
+  header {
+    border: 1px solid red;
+    border-top: 5px solid green;
+    /*margin-top: 1rem;*/
+    display: block;  
+    position: sticky;
+
+    h1 {
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
   /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
   body {       /* Can alternatively define in html {}. */
-    background-color:;
+  border: 1px solid red;
+    margin: 5rem;
+
+    display: grid;
+    /*background-color:;
     background-image:;
-    color:;
-    font-family:; /* Define with at least one font name and its related generic family name.*/
-    margin:;
+
     padding:;
     max-width:;
+        color: 1E1E1E;
+    font-family:; /* Define with at least one font name and its related generic family name.*/
+
+
   }
-  
-  /*  ----- Page layout blocks -----  */
+/*  
+    ----- Page layout blocks -----  
   header {}
   main {}
   section {}
@@ -36,21 +75,23 @@
     #topic2 {}
   div {}
   aside {}
-  footer {}
+  footer {} */
   
-  /* ----- Anchors ----- Text links */
-  a {}
+  /* ----- Anchors ----- Text links 
+  a {
+    color: 58BDD2;
+  }
   a:link {}
   a:hover {}
   a:active {}
   a:visited {}
   
-  /*  ----- Navigation ----- Override text links for navigation only.  */
+  /*  ----- Navigation ----- Override text links for navigation only.  
   nav {}
   nav a {}
   nav a:hover {}
   
-  /*  -----  Typography  ----- */
+  /*  -----  Typography  ----- 
   p {}
   br {}
   ol, ul, dl {}
@@ -82,7 +123,7 @@
   sup {}
   time {}
   
-  /*  ----- Coding or instructional typography ----- */
+  /*  ----- Coding or instructional typography ----- 
   pre {}
   code {}
   kbd {}
@@ -91,7 +132,7 @@
   del {} 
   ins {}
   
-  /*  ----- Table ----- */
+  /*  ----- Table ----- 
   table {}
   caption {}
   thead {}
@@ -107,7 +148,7 @@
   datalist {}
   
   
-  /*  ----- Form ----- */
+  /*  ----- Form ----- 
   form {}
   fieldset {}
     legend {}
@@ -123,7 +164,7 @@
   progress {}
   
   
-  /* ----- Media ----- */
+  /* ----- Media ----- 
   figure {}
     figcaption {}
     figure img {}
@@ -136,7 +177,7 @@
   embed {}
   object {}
   
-  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  
   .gallery {}
   
   .floatright {}
@@ -161,12 +202,13 @@
   
   @keyframes App-logo {}
   
-  /*   ===== TABLET  media query overrides mobile styles ===== */
+  /*   ===== TABLET  media query overrides mobile styles ===== 
   @media all and (min-width: 600px) {}
   
-  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== 
   @media all and (min-width: 1080px) {}
   
-  /*   ===== PRINT  media query overrides previous styles =====  */
+  /*   ===== PRINT  media query overrides previous styles =====  
   @media print {}
   
+  */
