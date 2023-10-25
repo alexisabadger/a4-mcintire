@@ -13,7 +13,7 @@
 * { 
 
   color: #1E1E1E;
-  background-color: white;
+
   padding: 0;
 }
 
@@ -33,14 +33,17 @@ html {
   
   a {
     color: #58BDD2;
+    padding: .5rem;
+    font-weight: 700;
+
   }
 
   header {
     border: 1px solid red;
     border-top: 5px solid green;
     /*margin-top: 1rem;*/
-    display: block;  
-    position: sticky;
+    background-color: white;
+
 
     h1 {
       img {
@@ -52,9 +55,9 @@ html {
   /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
   body {       /* Can alternatively define in html {}. */
   border: 1px solid red;
-    margin: 5rem;
+    /*margin: 5rem;*/
+    margin: 0;
 
-    display: grid;
     /*background-color:;
     background-image:;
 
@@ -62,8 +65,48 @@ html {
     max-width:;
         color: 1E1E1E;
     font-family:; /* Define with at least one font name and its related generic family name.*/
+  }
 
+  #grid-child-header {
 
+    border: 3px dotted black;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  }
+
+  #grid-child-global-nav {
+    /*border: 3px dotted yellow;*/
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 16%;
+    background-color: white;
+  }
+
+  #grid-child-local-nav {
+    /*border: 3px dotted blue;*/
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 22%;
+    background-color: white;
+  }
+
+  #grid-child-main {
+    display: grid;
+    border: 3px solid green;
+    background-color: red;
+    margin-top: 200px;
   }
 /*  
     ----- Page layout blocks -----  
