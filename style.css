@@ -20,13 +20,15 @@
 
 html {
   /* background-image: url("./images/21-monroe-street-new-york-ny.webp"); */
-  margin: 1rem;
+  background-image: url("./images/21-monroe-street-new-york-ny.webp");
 }
 
 /*   ----- Variables  -----  */
 :root {
     /*--custom-color-name:;
     --custom-embellishment-name:; */
+    --main-white-shade: #f9f9f9;
+    --accent-color-red: #A60F2B;
     font-family: Poppins;
     font-size: 16px;
   }
@@ -40,13 +42,14 @@ html {
 
   header {
 
-      border: 3px dotted black;
+      /*border: 3px dotted black; */
       position: fixed;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
       align-items: center;
       width: 100%;
       height: 8rem;
-      background-color: white;
+      background-color: var(--main-white-shade);
       z-index: 100; /* Ensures the header is on top of other content */
 
   }
@@ -55,6 +58,7 @@ html {
     font-size: 2rem;
     font-weight: 700;
     margin-left: 2rem;
+    justify-content: center;
   }
 
   header img {
@@ -88,8 +92,8 @@ html {
   top: 8rem; /* Adjust this value to leave space for the fixed header */
   width: 100%; /* Adjust the width of your navigation bar */
   z-index: 100; /* Ensures the nav bar is on top of other content */
-  border: 3px dotted pink;
-  background-color: white;
+  /* border: 3px dotted pink; */
+  background-color: var(--main-white-shade);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,30 +110,30 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-  top: 11rem; /* Adjust this value to leave space for the fixed header */
+  top: 10.5rem; /* Adjust this value to leave space for the fixed header */
   width: 100vw; /* Adjust the width of your navigation bar */
   z-index: 100; /* Ensures the nav bar is on top of other content */
-  border: 3px dotted blue;
-  background-color: white;
+  /*border: 3px dotted blue; */
+  background-color: var(--main-white-shade);
   }
 
   #index {
     display: grid;
-    border: 3px solid green;
-    background-color: red;
-    margin-top: 14rem;
+    /*border: 3px solid green;*/
+    background-color: var(--accent-color-red);
+    margin-top: 13rem;
   }
 
   #contact {
     display: grid;
     border: 3px solid green;
-    background-color: red;
+    background-color: var(--accent-color-red);
     margin-top: 11rem;
   }
 
   #gallery {
     display: grid;
-    background-color: red;
+    background-color: var(--accent-color-red);
     margin-top: 11rem;
   }
 
