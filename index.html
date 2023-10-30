@@ -20,8 +20,14 @@
 <body style="font-family: Poppins; font-weight: 200;">
 
     <header id="grid-child-header">
-        <a href="./index.html"><img id="headerImg" src="./images/android-chrome-192x192.png"></a>
-        <h1>E. Alex McIntire</h1>
+
+        <h1>
+            <span>E. Alex</span>
+            <a href="./index.html" >
+                <img id="headerImg" src="./images/android-chrome-192x192.png">
+            </a>
+            <span>McIntire</span>
+        </h1>
     </header>
 
     <nav class="global" id="grid-child-global-nav">
@@ -35,6 +41,7 @@
         <a class="anchor" href="#frontendDesign">Frontend Design</a>
         <a class="anchor" href="#optimizingImages">Optimizing Images</a>
         <a class="anchor" href="#favicons">Favicons</a>
+        <a class="anchor" href="#css">Cascading Stylesheets</a>
     </nav>
     
     <main id="index">
@@ -170,6 +177,39 @@
                     and allow users to easily pick out a tab among the many they may have open in their 
                     browser at any given time. Favicons are mostly commonly rendered in .ICO are .SVG and 
                     .PNG images formats, though .GIF can also be used.
+                </p>
+            </article>
+
+            <article id="css">
+                <h3>Cascading Stylesheets</h3>
+
+                <p>Stylesheets are an important component of websites and web applications. The rules of <strong>CSS</strong>
+                    -- Cascading Stylesheets -- allow developers to edit a site's presentation layer to give
+                    the site a consistent look and feel. Additionally, developers are able to modify these style rules
+                    without altering the site's content.
+                </p>
+                <p>
+                    How can CSS be used to style a website?
+                    <ol>
+                        <li>
+                            <strong>Imported/linked stylesheets</strong>: CSS is written in a separate file (or multiple separate files)
+                            which are then linked to a site's HTML file(s) using the link tag.
+                        </li>
+                        <li>
+                            <strong>Embedded styles</strong>: CSS is written directly into the HTML file, using the style attribute
+                            of an individual HTML element.
+                        </li>
+                        <li>
+                            <strong>Inline styles</strong>: CSS is written directly into the HTML file, using the style tag.
+                        </li>
+                        <li>
+                            In a <strong>JavaScript template literal</strong>: which is where CSS is written directly in 
+                            a JavaScript function
+                        </li>
+                        <li>
+                            In <strong>regular JavaScript</strong>, which can be accomplished by manipulating the Document Object Model.
+                        </li>
+                    </ol>
                 </p>
             </article>
 
